@@ -106,6 +106,9 @@ svg:hover {
         width: 100%;
         text-align: center;
     }
+    .section-top {
+        background-size: 200%;
+    }
     .countdown-container {
         transform: scale(0.50);
     }
