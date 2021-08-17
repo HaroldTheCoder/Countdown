@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(hsl(234, 17%, 12%), hsl(235, 16%, 14%), hsl(236, 21%, 26%));
+    font-family: 'Red Hat Text', sans-serif;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+#main-container {
+    height: 100vh;
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    padding: 5em;
+}
+p {
+    color: hsl(237, 18%, 59%);
+    padding: 2em;
+}
+.box {
+    padding: 0.50em;
+    width: 100%;
+    background-color: hsl(236, 21%, 26%);
+    color: hsl(345, 95%, 68%);
+    font-size: 4em;
+    border-radius: 0.50rem;
+    box-shadow: 0px 10px 2px hsl(234, 17%, 12%);
+}
+.section-top {
+    background: url(images/bg-stars.svg) no-repeat center center;
+    background-size: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.countdown-container {
+    width: auto;
+    display: grid;
+    grid-template-areas: "box-1 box-2 box-3 box-4";
+    gap: 1.5em;
+    
+}
+.days-box, .hours-box, 
+.minutes-box, .seconds-box {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+}
+.days-box {
+    grid-area: box-1;
+}
+.hours-box {
+    grid-area: box-2;
+}
+.minutes-box {
+    grid-area: box-3;
+}
+.seconds-box {
+    grid-area: box-4;
+}
+.section-bottom {
+    background: url(images/pattern-hills.svg) no-repeat bottom center;
+    background-size: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.social-links-container {
+    padding-top: 17em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+svg {
+    margin: 0 2% 0 2%;
+    fill: #8385A9;
+}
+svg:hover {
+    fill: hsl(345, 95%, 68%);
+    cursor: pointer;
+}
+@media screen and (max-width:400px ) {
+    #main-container {
+        width: 101vw;
+        height: 101vh;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 1.50em;
+        padding: 8em 1em 0 1em;
+        width: 100%;
+        text-align: center;
+    }
+    .countdown-container {
+        transform: scale(0.50);
+    }
+    
+}
