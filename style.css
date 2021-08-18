@@ -5,8 +5,17 @@
     margin: 0;
     padding: 0;
 }
+body::before {
+    content: ' ';
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    height: 100%;
+    background: url(images/bg-stars.svg) no-repeat center center;
+    background-size: 100%;
+}
 body {
-    background: linear-gradient(hsl(234, 17%, 12%),  #211A29);
+    background: linear-gradient(hsl(234, 17%, 12%) 1%, #211A29 30%,  #211A29 100%);
     font-family: 'Red Hat Text', sans-serif;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -16,7 +25,7 @@ body {
 }
 h1 {
     color: hsl(0, 0%, 100%);
-    padding: 7em 0 4em 0;
+    padding: 6em 0 4em 0;
     font-size: 1.60em;
 }
 header {
@@ -37,8 +46,6 @@ p {
     box-shadow: 0px 10px 2px hsl(234, 17%, 12%);
 }
 .section-top {
-    background: url(images/bg-stars.svg) no-repeat center center;
-    background-size: 100%;
     height: 50%;
     display: flex;
     justify-content: baseline;
