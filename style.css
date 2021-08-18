@@ -81,6 +81,7 @@ p {
 .social-links-container {
     padding-top: 17em;
     width: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,20 +95,28 @@ svg:hover {
     fill: hsl(345, 95%, 68%);
     cursor: pointer;
 }
-@media screen and (max-width:400px ) {
+@media screen and (max-width: 400px ) {
+   
     #main-container {
         width: 101vw;
         height: 101vh;
         overflow: hidden;
+        
     }
     h1 {
         font-size: 1.50em;
-        padding: 8em 1em 0 1em;
+        padding: 6em 1em 0 1em;
         width: 100%;
         text-align: center;
     }
     .section-top {
         background-size: 200%;
+        height: auto;
+        
+    }
+    .section-bottom {
+        background-size: 250%;
+        background-position: bottom right;
     }
     .countdown-container {
         transform: scale(0.50);
