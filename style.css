@@ -16,7 +16,12 @@ body {
 }
 h1 {
     color: hsl(0, 0%, 100%);
-    padding: 5em;
+    padding: 6em 0 4em 0;
+    font-size: 1.60em;
+}
+header {
+    width: 100%;
+    text-align: center;
 }
 p {
     color: hsl(237, 18%, 59%);
@@ -119,6 +124,60 @@ svg:hover {
     }
     .countdown-container {
         transform: scale(0.50);
+    }
+    
+}
+@media screen and (min-width: 401px ) and (max-width: 600px ) {
+   
+    #main-container {
+        width: 101vw;
+        height: 101vh;
+        overflow: hidden;
+        
+    }
+    h1 {
+        font-size: 1.50em;
+        padding: 10em 1em 0 1em;
+        width: 100%;
+        text-align: center;
+    }
+    .section-top {
+        background-size: 200%;
+        
+    }
+    .section-bottom {
+        background-size: 250%;
+        background-position: bottom right;
+    }
+    .countdown-container {
+        transform: scale(0.50);
+    }
+    
+}
+@media screen and (min-width: 601px ) and (max-width: 800px ) {
+   
+    #main-container {
+        width: 101vw;
+        height: 101vh;
+        overflow: hidden;
+        
+    }
+    h1 {
+        font-size: 1.50em;
+        padding: 10em 1em 0 1em;
+        width: 100%;
+        text-align: center;
+    }
+    .section-top {
+        background-size: 200%;
+        
+    }
+    .section-bottom {
+        background-size: 250%;
+        background-position: bottom right;
+    }
+    .countdown-container {
+        transform: scale(0.80);
     }
     
 }
