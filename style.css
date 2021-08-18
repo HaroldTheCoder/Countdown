@@ -6,7 +6,7 @@
     padding: 0;
 }
 body {
-    background: linear-gradient(hsl(234, 17%, 12%), hsl(235, 16%, 14%), hsl(236, 21%, 26%));
+    background: linear-gradient(hsl(234, 17%, 12%),  #211A29);
     font-family: 'Red Hat Text', sans-serif;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -16,7 +16,7 @@ body {
 }
 h1 {
     color: hsl(0, 0%, 100%);
-    padding: 6em 0 4em 0;
+    padding: 7em 0 4em 0;
     font-size: 1.60em;
 }
 header {
@@ -84,7 +84,7 @@ p {
     flex-direction: column;
 }
 .social-links-container {
-    padding-top: 17em;
+    padding-top: 15em;
     width: 50%;
     height: 100%;
     display: flex;
