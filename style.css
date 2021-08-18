@@ -102,6 +102,7 @@ p {
 svg {
     margin: 0 2% 0 2%;
     fill: #8385A9;
+    z-index: 1;
 }
 svg:hover {
     fill: hsl(345, 95%, 68%);
