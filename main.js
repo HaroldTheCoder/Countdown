@@ -1,6 +1,6 @@
 const countdown = () => {
     // create future time, current time and gap between the two
-    const countDate = new Date("December 24, 2021 00:00:00").getTime();
+	const countDate = new Date("April 19, 2022 00:00:00").getTime();
     const now = new Date().getTime();
     const gap = countDate - now;
 
@@ -22,13 +22,6 @@ const countdown = () => {
     document.querySelector(".minutes").innerText = minuteDisplay;
     document.querySelector(".seconds").innerText = secondDisplay;
     
-    // reset countdown
-    if(countDate === true) {
-        document.querySelector(".days").innerText = "00";
-        document.querySelector(".hours").innerText = "00";
-        document.querySelector(".minutes").innerText = "00";
-        document.querySelector(".seconds").innerText = "00";
-    }
 }
 // countdown function running every 1 second(1000) interval using setInterval method
 setInterval(countdown, 1000);
