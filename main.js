@@ -21,6 +21,14 @@ const countdown = () => {
     document.querySelector(".hours").innerText = hourDisplay;
     document.querySelector(".minutes").innerText = minuteDisplay;
     document.querySelector(".seconds").innerText = secondDisplay;
+    
+    // reset countdown
+    if(countDate === true) {
+        document.querySelector(".days").innerText = "00";
+        document.querySelector(".hours").innerText = "00";
+        document.querySelector(".minutes").innerText = "00";
+        document.querySelector(".seconds").innerText = "00";
+    }
 }
 // countdown function running every 1 second(1000) interval using setInterval method
 setInterval(countdown, 1000);
